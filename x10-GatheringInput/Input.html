@@ -2,12 +2,13 @@
 <!--October 5, Lab Exercise-->
 <html lang="en">
   <head>
-    <title><b>Gathering Input</b></title>
+    <title>Gathering Input</title>
     <meta charset="utf-8">
     <script>
-      function getname() {
+      function getName() {
         var fullName;
-        fullName = document.getElementById("First").value;
+        fullName = document.getElementById("first").value;
+        fullName += " " + document.getElementById("last").value;
         document.getElementById("message").innerHTML = fullName;
       }
     </script>
