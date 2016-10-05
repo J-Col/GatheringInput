@@ -4,11 +4,18 @@
   <head>
     <title><b>Gathering Input</b></title>
     <meta charset="utf-8">
+    <script>
+      function getname() {
+        var fullName;
+        fullName = document.getElementById("First").value;
+        document.getElementById("message").innerHTML = fullName;
+      }
+    </script>
   </head>
   <body>
   First: <input type="text" id="first">
   Last: <input type="text" id="last">
-  <button input type="button" id="doneButton" onclick="getName(Done);">
+  <button type="button" id="doneButton" onclick="getName();">
     Done</button>
   <p id="message">
   </p>
